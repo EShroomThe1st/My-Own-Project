@@ -1,0 +1,32 @@
+.AuthorsItems img{
+    width: 50%;
+}
+
+.AuthorsItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Righteous;
+    color: white;
+}
+
+.FullAuthorsList h1{
+    text-align: center;
+    font-family: Righteous;
+    color: white;
+}
+
+.Me, .Chairbender, .Comfortor, .TE, .Sponsor, .Sis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Me:hover, .Chairbender:hover, .Comfortor:hover, .TE:hover, .Sponsor:hover, .Sis:hover{
+    position: relative;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+
+
