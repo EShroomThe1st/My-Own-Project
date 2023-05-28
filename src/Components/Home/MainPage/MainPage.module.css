@@ -1,0 +1,39 @@
+.HomePage{
+    display: flex;
+    flex-direction: column;
+  }
+  
+    .Body{
+      background-image: url('/public/asset/img/Camping_Background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 4096px;
+      border-radius: 2rem;
+      box-shadow:  rgba(44, 40, 40, 0.68) 5px 5px;
+      padding-top: 3rem !important;
+      padding-bottom: 10rem;
+      margin-bottom: 3rem;
+    }
+    
+    body{
+      background-color: black;
+      background-image: url('/public/asset/img/Trinity_Background.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  
+
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

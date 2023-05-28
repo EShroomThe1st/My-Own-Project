@@ -1,0 +1,75 @@
+.RedIntroduction{
+    display: flex;
+    background-color: rgb(252, 83, 83);
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    font-family: fantasy;
+    font-weight: lighter;
+}
+
+.RedIntroduction img{
+    width: 30rem;
+}
+
+.RedIntro p, .RedIntro h2{
+    color: rgb(252, 83, 83);
+}
+
+.RedIntro{
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.RedIntro h1{
+    color: white;
+    font-size: 4.5rem;
+    box-shadow: none !important;
+    right: unset !important;
+    bottom: unset !important;
+}
+
+.RedIntro h2{
+    margin-left: 10rem;
+    margin: 0;
+}
+
+.RedIntro p{
+    font-size: large;
+}
+
+.RedIntroduction:hover {
+    position: relative;
+    right: 1rem;
+    bottom: 1rem;
+    offset: 1rem;
+    box-shadow: rgba(252, 191, 191, 0.68) 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.RedIntroduction:hover > .RedIntro p, .RedIntroduction:hover > .RedIntro h2{
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.3s ease;
+}
+
+.RedIntroduction > .RedIntro > .RedSub {
+    font-size: 3rem;
+}
+
+.RedIntroduction img{
+    box-shadow: none !important;
+    right: unset !important;
+    bottom: unset !important;
+}
+
+.RedIntro{
+    box-shadow: none !important;
+    right: unset !important;
+    bottom: unset !important;
+}
+
+.RedIntroduction img{
+    border-radius: 2rem;
+}

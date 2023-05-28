@@ -1,0 +1,69 @@
+.BlueIntroduction{
+    display: flex;
+    background-color: rgb(72, 227, 255);
+    font-family: Anton;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.BlueIntroL{
+    text-align: left;
+    margin-right: 2rem;
+}
+
+.BlueIntroR{
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.BlueIntroduction h1{
+    font-size: 4.5rem;
+    box-shadow: none !important;
+    right: unset !important;
+    bottom: unset !important;
+}
+
+.BlueIntroduction h2, .BlueIntroduction p{
+    color: rgb(72, 227, 255);
+}
+
+.BlueIntroR h1{
+    color: white;
+}
+
+.BlueIntroduction img{
+    border-radius: 2rem;
+    width: 30rem;
+}
+
+.BlueIntroduction:hover {
+    position: relative;
+    right: 1rem;
+    bottom: 1rem;
+    offset: 1rem;
+    box-shadow: rgba(40, 153, 173, 0.815) 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.BlueIntroL, .BlueIntroR{
+    box-shadow: none !important;
+    right: unset !important;
+    bottom: unset !important;
+}
+
+.BlueSubL, .BlueSubR{
+    font-size: 2.5rem;
+}
+
+
+.BlueIntroduction:hover > .BlueIntroL p, .BlueIntroduction:hover> .BlueIntroL h2{
+    color: rgb(0, 0, 0) !important;
+    transition: all 0.3s ease;
+}
+
+.BlueIntroduction:hover > .BlueIntroR p, .BlueIntroduction:hover > .BlueIntroR h2 {
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.3s ease;
+}

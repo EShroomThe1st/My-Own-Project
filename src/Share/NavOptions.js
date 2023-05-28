@@ -15,18 +15,25 @@ export const ModuleNav =[
 ]
 
 export const authors =[
-    {name: 'Me', icon:'asset/img/Untitled65_20230523162417.PNG'},
-    {name: 'Chairbender', icon:'asset/img/Untitled66_20230523163317.PNG'},
-    {name: 'Comfortor', icon:'asset/img/Untitled67_20230523164008.PNG'},
-    {name: 'TE', icon:'asset/img/Untitled67_20230523164712.PNG'},
-    {name: 'Sponsor', icon:'asset/img/Untitled67_20230523165053.PNG'},
-    {name: 'Sis', icon:'asset/img/Untitled67_20230523233925.png'},
+    {name: 'Me', icon:'asset/img/Me_Logo.PNG'},
+    {name: 'Chairbender', icon:'asset/img/Chairbender_Logo.PNG'},
+    {name: 'Comfortor', icon:'asset/img/Comfortor_Logo.PNG'},
+    {name: 'TE', icon:'asset/img/TE_Logo.png'},
+    {name: 'Sponsor', icon:'asset/img/Sponsor_Logo.PNG'},
+    {name: 'Sis', icon:'asset/img/Sis_Logo.png'},
+]
+
+export const honorable =[
+    {class:'Rigby565', name: 'Rigby565', icon:'asset/img/Rigby565_Logo.png', quote:"Its ok if you need to change, i will be there always!"},
+    {class:'Thinh-LE', name: 'Lucifer', icon:'asset/img/Thinh-Le_Logo.png', quote:"Don't gamble, it will kill you one day"},
+    {class:'Tien-Dat', name: 'Pham Tien Dat', icon:'asset/img/PhamTienDat_Logo.png', quote:"If your code works, don't ever touch it again."},
+    {class:'Nhat-Truong', name: 'Cielline', icon:'asset/img/Nhat-Truong_Logo.png', quote:"if you think it's good, it's good"},
 ]
 
 export const Images = [
-    {id: '0', src: 'asset/img/Untitled68_20230523193216.png'},
-    {id: '1', src: 'asset/img/Untitled68_20230523225533.png'},
-    {id: '2', src: 'asset/img/Untitled68_20230523231049.png'}
+    {id: '0', src: 'asset/img/Red_Banner.jpg'},
+    {id: '1', src: 'asset/img/Yellow_Banner.jpg'},
+    {id: '2', src: 'asset/img/Blue_Banner.jpg'}
 ]
 
 export const RandomMessage = [
@@ -49,6 +56,9 @@ export const RandomMessage = [
     {id:'17', Message:'Read Moonlight Garden'},
     {id:'18', Message:'.'},
     {id:'19', Message:'How does it feel to have every bit of your life drained out of your body by your nightmare?'},
-    {id:'20', Message:'Do not care bout the opinion others... I mean it'}
-
+    {id:'20', Message:'Do not care bout the opinion others... I mean it'},
+    {id:'21', Message:"Its ok if you need to change, i will be there always!"},
+    {id:'22', Message:"Don't gamble, it will kill you one day"},
+    {id:'23', Message:"If your code works, don't ever touch it again."},
+    {id:'24', Message:"if you think it's good, it's good"}
 ]
