@@ -1,6 +1,6 @@
 .BlueIntroduction{
     display: flex;
-    background-color: rgb(72, 227, 255);
+    background-color: rgb(60, 193, 216);
     font-family: Anton;
     justify-content: space-between;
     padding: 2rem;
@@ -26,7 +26,7 @@
 }
 
 .BlueIntroduction h2, .BlueIntroduction p{
-    color: rgb(72, 227, 255);
+    color: rgb(60, 193, 216);
 }
 
 .BlueIntroR h1{

@@ -12,7 +12,7 @@ return (
                         <p>I might not be the one to judge</p>
                         <p>That's why items with such huge destructive capabilities are here</p>
                         <p>What you do with such items after you've bought it is none of my business</p>
-                        <p>But if you some advice</p>
+                        <p>But if you want some advices</p>
                         <p>Be the better person than i am</p>
                     </div>
                 </div>

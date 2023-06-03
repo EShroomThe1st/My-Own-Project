@@ -1,6 +1,6 @@
 .RedIntroduction{
     display: flex;
-    background-color: rgb(252, 83, 83);
+    background-color: rgb(222, 70, 70);
     font-weight: bold;
     justify-content: space-between;
     padding: 2rem;
@@ -15,7 +15,7 @@
 }
 
 .RedIntro p, .RedIntro h2{
-    color: rgb(252, 83, 83);
+    color: rgb(222, 70, 70);
 }
 
 .RedIntro{

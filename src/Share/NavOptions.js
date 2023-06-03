@@ -1,4 +1,4 @@
-import { Map, AccountCircle, BusinessCenter, DeviceHub, Home, Brightness7, AccountBalance } from '@mui/icons-material'
+import { Map, AccountCircle, BusinessCenter, DeviceHub, Home, Brightness7, AccountBalance, FitnessCenter, PsychologyAlt, Carpenter } from '@mui/icons-material'
 import React from 'react'
 
 export const NavOptions = [
@@ -12,6 +12,12 @@ export const ModuleNav =[
     {name: 'General', icon:<AccountBalance/>},
     {name: 'Authors', icon:<AccountCircle/>},
     {name: 'Location', icon:<Map/>}
+]
+
+export const RedModuleNav =[
+    {class:'Brute-Force', name: 'Brute Force', icon: <FitnessCenter/>},
+    {class:'Brainstorm', name: 'Brainstorm', icon: <PsychologyAlt/>},
+    {class:'Tools', name: 'Tools', icon: <Carpenter/>}
 ]
 
 export const authors =[
@@ -28,12 +34,40 @@ export const honorable =[
     {class:'Thinh-LE', name: 'Lucifer', icon:'asset/img/Thinh-Le_Logo.png', quote:"Don't gamble, it will kill you one day"},
     {class:'Tien-Dat', name: 'Pham Tien Dat', icon:'asset/img/PhamTienDat_Logo.png', quote:"If your code works, don't ever touch it again."},
     {class:'Nhat-Truong', name: 'Cielline', icon:'asset/img/Nhat-Truong_Logo.png', quote:"if you think it's good, it's good"},
+    {class:'Fokun', name: 'Fokun', icon:'asset/img/Fokun-Logo.png', quote:"if you think it's good, it's good. To live , do as you wish. To exist , do as people desire"},
+    {class:'Clown', name: 'C.H', icon:'asset/img/Clown-Logo.png', quote:"You are just as scared as we are"},
+]
+
+export const Background =[
+    {name:'Trinity', background:'asset/img/Trinity_Background.png'},
+    {name:'Red', background:'asset/img/Red-Background.png'},
+    {name:'Camping', background:'asset/img/Camping_Background.jpg'},
 ]
 
 export const Images = [
     {id: '0', src: 'asset/img/Red_Banner.jpg'},
     {id: '1', src: 'asset/img/Yellow_Banner.jpg'},
-    {id: '2', src: 'asset/img/Blue_Banner.jpg'}
+    {id: '2', src: 'asset/img/Blue_Banner.jpg'},
+]
+export const RedItems =[
+        {id: 'Brute-Force', img:'asset/img/Heal-Items.PNG'},
+        {id: 'Brute-Force', img:'asset/img/Armor-Items.PNG'},
+        {id: 'Brute-Force', img:'asset/img/Grow-Items.PNG'},
+        {id: 'Brute-Force', img:'asset/img/SoulImpact-Items.PNG'},
+        {id: 'Brute-Force', img:'asset/img/HeadTrauma-Items.PNG'},
+
+        {id: 'Brainstorm', img:'asset/img/Infected-Items.PNG'},
+        {id: 'Brainstorm', img:'asset/img/Signal-Items.PNG'},
+        {id: 'Brainstorm', img:'asset/img/SoulSensor-Items.PNG'},
+        {id: 'Brainstorm', img:'asset/img/Spore-Items.PNG'},
+        {id: 'Brainstorm', img:'asset/img/Shifting-Items.PNG'},
+
+        {id: 'Tools', img:'asset/img/Scythe-Items.PNG'},
+        {id: 'Tools', img:'asset/img/Machete-Items.PNG'},
+        {id: 'Tools', img:'asset/img/MagmaSword-Items.PNG'},
+        {id: 'Tools', img:'asset/img/StrongMushroom-Items.PNG'},
+        {id: 'Tools', img:'asset/img/FastMushroom-Items.PNG'},
+        {id: 'Tools', img:'asset/img/Halo-Items.PNG'}
 ]
 
 export const RandomMessage = [

@@ -1,6 +1,6 @@
 .YellowIntroduction{
     display: flex;
-    background-color: rgb(255, 255, 85);
+    background-color: rgb(215, 215, 73);
     font-weight: bold;
     justify-content: space-between;
     padding: 2rem;
@@ -14,7 +14,7 @@
 }
 
 .YellowIntro p, .YellowIntro h2{
-    color: rgb(255, 255, 85);
+    color: rgb(215, 215, 73);
 }
 
 .YellowIntro{

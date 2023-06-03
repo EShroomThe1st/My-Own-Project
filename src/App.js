@@ -1,21 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Box } from "@mui/material";
-import MainPage from './Components/Home/MainPage/MainPage.jsx';
+import MainPage from './Components/MainPage/MainPage.jsx';
 import Random from "./Components/Random.jsx";
+import { StateContext, useStateContext } from "./context/StateContext.js";
+import styles from "./App.module.css";
+import { Background } from "./Share/NavOptions.js";
+import { useState, useEffect } from "react";
+
 
 const App = () => {
   return(
-    <BrowserRouter>
-    <Box>
-      <Routes>
-        <Route path="/" exact element={<MainPage/>}/>
-        <Route path="/Random" element={<Random/>}/>
-        {/* <Route path="/video/:id" element={<VideoDetail/>}/>
-        <Route path="/channel/:id" element={<ChannelDetail/>}/>
-        <Route path="/search/:searchTerm" element={<SearchFeed/>}/> */}
-      </Routes>
-    </Box>
-    </BrowserRouter>
+    <StateContext>
+      <div className="MyAss">
+        <Outlet/>
+      </div>
+    </StateContext>
   )
 }
 
