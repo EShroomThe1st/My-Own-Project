@@ -57,6 +57,7 @@
 }
 
 .Home:hover{
+    cursor:pointer;
     background-color: aliceblue;
     color: black !important;
     border-radius: 2rem;
@@ -80,6 +81,7 @@
 }
 
 .Red:hover{
+    cursor:pointer;
     background-color: rgb(252, 83, 83);
     color: black !important;
     border-radius: 2rem;
@@ -103,6 +105,7 @@
 }
 
 .Yellow:hover{
+    cursor:pointer;
     background-color: rgb(255, 255, 85);
     color: black !important;
     border-radius: 2rem;
@@ -125,6 +128,7 @@
 }
 
 .Blue:hover{
+    cursor:pointer;
     background-color: rgb(72, 227, 255);
     color: black !important;
     border-radius: 2rem;

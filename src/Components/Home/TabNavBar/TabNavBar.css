@@ -34,6 +34,7 @@
 }
 
 .General:hover{
+        cursor:pointer;
         background-color: aliceblue;
         color: black !important;
         padding: 1rem 3rem 1rem 3rem;
@@ -46,6 +47,7 @@
 }
 
 .Authors:hover{
+    cursor:pointer;
     background-color: aliceblue;
     color: black !important;
     padding: 1rem 3rem 1rem 3rem;
@@ -58,6 +60,7 @@
 }
 
 .Location:hover{
+    cursor:pointer;
     background-color: aliceblue;
     color: black !important;
     padding: 1rem 3rem 1rem 3rem;

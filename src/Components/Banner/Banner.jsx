@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styles from './Banner.module.css';
-import { Images } from "../../../Share/NavOptions";
 import { useEffect } from "react";
 
-const Carousel = () => {
+const Carousel = ({Images}) => {
   const images = Images;
   const [currentImage, setCurrentImage] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);

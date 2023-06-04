@@ -39,8 +39,8 @@ export const honorable =[
 ]
 
 export const Background =[
-    {name:'Trinity', background:'asset/img/Trinity_Background.png'},
-    {name:'Red', background:'asset/img/Red-Background.png'},
+    {name:'Trinity', background:'asset/img/Trinity_Background.jpg'},
+    {name:'Red', background:'asset/img/Red-Background.jpg'},
     {name:'Camping', background:'asset/img/Camping_Background.jpg'},
 ]
 
@@ -50,24 +50,43 @@ export const Images = [
     {id: '2', src: 'asset/img/Blue_Banner.jpg'},
 ]
 export const RedItems =[
-        {id: 'Brute-Force', img:'asset/img/Heal-Items.PNG'},
-        {id: 'Brute-Force', img:'asset/img/Armor-Items.PNG'},
-        {id: 'Brute-Force', img:'asset/img/Grow-Items.PNG'},
-        {id: 'Brute-Force', img:'asset/img/SoulImpact-Items.PNG'},
-        {id: 'Brute-Force', img:'asset/img/HeadTrauma-Items.PNG'},
+        {id: 'Brute-Force', img:'asset/img/Heal-Items.PNG', name:'Plantgrowth Heal', info:"Being a Plantgrowth has its upside, being able to heal from any wound will keep you in battle for much longer than your opponents if you don't let yourself stuck in a choke point"},
+        {id: 'Brute-Force', img:'asset/img/Armor-Items.PNG', name:'Fungus Armor', info:"Tanking every hit being thrown at you, generate armor from fungus under your skin to soften the blows"},
+        {id: 'Brute-Force', img:'asset/img/Grow-Items.PNG', name:'Fungus Growth', info:"Intimadate your foes, grow to an imaginable size, like a cat pushing up its back"},
+        {id: 'Brute-Force', img:'asset/img/SoulImpact-Items.PNG', name:'Soul Impact', info:"Developed by the finest mind for the basic of combat, focus your soul on a focal point and strike to deal a massive ammount of damage"},
+        {id: 'Brute-Force', img:'asset/img/HeadTrauma-Items.PNG', name:'Head Trauma', info:"Being hit in the head a lot can make you sleepy but your will power is still there, use it to push yourself further and keep fighting"},
 
-        {id: 'Brainstorm', img:'asset/img/Infected-Items.PNG'},
-        {id: 'Brainstorm', img:'asset/img/Signal-Items.PNG'},
-        {id: 'Brainstorm', img:'asset/img/SoulSensor-Items.PNG'},
-        {id: 'Brainstorm', img:'asset/img/Spore-Items.PNG'},
-        {id: 'Brainstorm', img:'asset/img/Shifting-Items.PNG'},
+        {id: 'Brainstorm', img:'asset/img/Infected-Items.PNG', name:'Infection', info:"Turn your foes tissues into fungus and mushroom, instantly incapacitate them if you use it right"},
+        {id: 'Brainstorm', img:'asset/img/Signal-Items.PNG', name:'Fungus Message', info:"Your network of fungus can be a valuable source of information on the battlefield, let them send messages from your comrades and stay informative"},
+        {id: 'Brainstorm', img:'asset/img/SoulSensor-Items.PNG', name:'Soul Sensor', info:"Burst out small soul field, letting your soul knows exactly what's happening around you, preventing cheap shots or someone sneaking up behind you"},
+        {id: 'Brainstorm', img:'asset/img/Spore-Items.PNG', name:'Spore Gas', info:"Stay hidden by generating a small area of spore, you can keep track of everyone insde of that same spore cloud"},
+        {id: 'Brainstorm', img:'asset/img/Shifting-Items.PNG', name:'Body Shifting', info:"When the going gets tough, you need to be able to swiftly get out of the fight. Shift your body and move out the situation as fast as you can, your foes will have a hard time catching you"},
 
-        {id: 'Tools', img:'asset/img/Scythe-Items.PNG'},
-        {id: 'Tools', img:'asset/img/Machete-Items.PNG'},
-        {id: 'Tools', img:'asset/img/MagmaSword-Items.PNG'},
-        {id: 'Tools', img:'asset/img/StrongMushroom-Items.PNG'},
-        {id: 'Tools', img:'asset/img/FastMushroom-Items.PNG'},
-        {id: 'Tools', img:'asset/img/Halo-Items.PNG'}
+        {id: 'Tools', img:'asset/img/Scythe-Items.PNG', name:'Death Scythe', info:"The weapon created from the Deaths, used by every single one, by pass any physical defense and imortality. You hit them, it means you hit them"},
+        {id: 'Tools', img:'asset/img/Machete-Items.PNG', name:'Maraka Machete', info:"A machete with the summoning mark of the Maraka Tree, an everlasting burning tree, a tip to the scale in battle. With the Bind of Schrufie, it will be hard for you to lose the weapon in battle"},
+        {id: 'Tools', img:'asset/img/MagmaSword-Items.PNG', name:'Magma Dragon Heavy Sword', info:"A sword with the soul of a Magma Dragon, be nice it and it will be nice to you. He'll try keep the foes off your back"},
+        {id: 'Tools', img:'asset/img/StrongMushroom-Items.PNG', name:'Muscle Shroom', info:"Need a little bit of extra strength? Try to eat some Muscle Shroom developed by the Shroom, this mushroom is the key to win in any fight if your body can handle the stress"},
+        {id: 'Tools', img:'asset/img/FastMushroom-Items.PNG', name:'Reflex Mushroom', info:"Wanna be fast? Pop in the Reflex Mushroom and zoom around the battlefield. Just remember to retreat before it runs out"},
+        {id: 'Tools', img:'asset/img/Halo-Items.PNG', name:"Death's Halo", info:"You shouldn't be reading this"}
+]
+
+export const RedMessages=[
+    {id:"Default", header:"You will die", content:"You need to accept what you are and know what consequences your actions bring. Do what you want but you can't run away from the truth."},
+    {id:"Brute-Force", header:"Run into a wall", content:"You hit your head into a wall. You can punch, kick and scream all you want. You will have to think about how to get through that wall. Fighting can only get you so far."},
+    {id:"Brainstorm", header:"You tried to think", content:"You realize you are dumb, illogical and kinda creative. You give people ideas that you can't do on your own. You are happy."},
+    {id:"Tools", header:"The right one", content:"You'll need all the tools that you can get, find any edge that you can see. They are unforgiving, they are not her."}
+]
+
+export const locationinfo=[
+    {id:'1', message:'Mail: Purification123@hotmail.com'},
+    {id:'2', message:"Address: 7°22'42.1'N 62°32'08.4"},
+    {id:'3', message:'Phone: 1043848517'},
+]
+
+export const locationlogo=[
+    {name:'Instagram', img:'asset/img/Instagram.png'},
+    {name:'Twitter', img:'asset/img/Twitter.png'},
+    {name:'Facebook', img:'asset/img/Facebook.png'}
 ]
 
 export const RandomMessage = [

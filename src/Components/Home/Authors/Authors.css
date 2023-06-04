@@ -23,13 +23,13 @@
     font-size: 5rem;
 }
 
-.Me, .Chairbender, .Comfortor, .TE, .Sponsor, .Sis{
+.AuthorsIcon{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Me:hover, .Chairbender:hover, .Comfortor:hover, .TE:hover, .Sponsor:hover, .Sis:hover{
+.AuthorsIcon:hover{
     position: relative;
     right: 0.5rem;
     bottom: 0.5rem;
@@ -59,14 +59,14 @@
     margin-top: 2rem;
 }
 
-.Rigby565, .Thinh-LE, .Tien-Dat, .Nhat-Truong, .Fokun, .Clown{
+.HonorableIcon{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0.5rem;
 }
 
-.Rigby565:hover, .Thinh-LE:hover, .Tien-Dat:hover, .Nhat-Truong:hover, .Fokun:hover, .Clown:hover{
+.HonorableIcon:hover{
     position: relative;
     right: 0.5rem;
     bottom: 0.5rem;
@@ -83,24 +83,19 @@
 }
 
 .SpecialThanks{
+    width: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Righteous;
     color: white;
-    margin-top: 95rem;
-    margin-right: 60rem;
-}
-
-.SpecialThanks:hover{
     position: relative;
-    right: 0.5rem;
-    bottom: 0.5rem;
-    transition: all 0.3s ease;
+    top: 100rem;
+    right: 10rem;
 }
 
 .SpecialThanks img{
-    width: 50%;
+    width: 25%;
 }
 
 .SpecialThanks h1{

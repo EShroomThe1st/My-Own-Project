@@ -1,9 +1,38 @@
 .Location img{
-    width: 30%;
+    width: 60%;
     border-radius: 2rem;
 }
 
-.Location img:hover{
+.Location{
+    display: flex;
+    font-family: Righteous;
+    color: white;
+}
+
+.Location p{
+    margin: .25rem;
+}
+
+.LocationCard{
+    width: 35rem;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MoreInfo{
+    font-family: Righteous;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.LocationCard:hover{
     position: relative;
     right: 0.5rem;
     bottom: 0.5rem;
@@ -11,37 +40,20 @@
     box-shadow: rgba(98, 98, 98, 0.409) 10px 10px
 }
 
-.Location{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: Righteous;
-    color: white;
-}
-
-.Location h1{
-    margin-top: 4rem;
-}
-
 .Owner{
+    width: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Righteous;
     color: white;
-    margin-top: 100rem;
-    margin-right: 60rem;
-}
-
-.Owner:hover{
     position: relative;
-    right: 0.5rem;
-    bottom: 0.5rem;
-    transition: all 0.3s ease;
+    top: 150rem;
+    right: 10rem;
 }
 
 .Owner img{
-    width: 50%;
+    width: 25%;
 }
 
 .Owner h1{
@@ -50,4 +62,49 @@
 
 .Owner p{
     font-size: 3rem;
+}
+
+.LocationInfo{
+    background-color: black;
+    margin: 2rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    font-family: Righteous;
+}
+
+.LocationInfo p{
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.LocationInfo img{
+    width: 50%;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.LocationLogo ul{
+    list-style: none;
+    display: flex;
+}
+
+.LocationLogo{
+    width: 50%;
+}
+
+.LocationDetails{
+    width: 50%;
+}
+
+.LocationInfo ul{
+    color: white;
+    font-size: 2rem;
+}
+
+.LocationDetails ul li{
+    list-style: georgian;
+    margin-bottom: 4.5rem;
 }

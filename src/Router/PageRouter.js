@@ -17,18 +17,6 @@ const router = createBrowserRouter([
             {
                 path: "home",
                 element: <MainPage/>
-            },
-            {
-                path: "red",
-                element: <RedPage/>
-            },
-            {
-                path:"yellow",
-                element: <Random/>
-            },
-            {
-                path:"blue",
-                element: <Random/>
             }
         ]
     }

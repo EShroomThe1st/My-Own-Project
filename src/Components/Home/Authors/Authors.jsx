@@ -9,7 +9,7 @@ const Authors = () => {
           <h1>Authors</h1>
           <div className='AuthorsItems'>
               {authors.map((option)=>(
-                      <div className={option.name} key={option.name}>
+                      <div className="AuthorsIcon" key={option.name}>
                           <img src={option.icon}/>
                           <p>{option.name}</p>
                       </div>
@@ -20,7 +20,7 @@ const Authors = () => {
                 <h2>Honorable Mentions</h2>
                 <div className='Honorable'>
                   {honorable.map((option)=>(
-                              <div className={option.class} key={option.name}>
+                              <div className="HonorableIcon" key={option.name}>
                                   <img src={option.icon}/>
                                   <p>{option.name}</p>
                                   <p>{option.quote}</p>

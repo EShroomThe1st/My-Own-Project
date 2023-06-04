@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from "../Banner/Banner.jsx";
+import Banner from "../../Banner/Banner.jsx";
 import { Images, ModuleNav } from "../../../Share/NavOptions.js";
 import Introduction from "../Introduction/Introduction.jsx";
 import RedIntro from "../RedIntro/RedIntro.jsx";
@@ -10,7 +10,7 @@ import styles from "./General.module.css"
 const General = () => {
   return (
     <div>
-        <Banner/>
+        <Banner Images={Images}/>
         <Introduction/>
         <h1 className={styles.AboutCategory}>About the Categories</h1>
         <RedIntro/>
