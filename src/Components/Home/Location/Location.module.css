@@ -1,43 +1,9 @@
-.Location img{
-    width: 60%;
-    border-radius: 2rem;
-}
-
-.Location{
-    display: flex;
-    font-family: Righteous;
-    color: white;
-}
-
-.Location p{
-    margin: .25rem;
-}
-
-.LocationCard{
-    width: 35rem;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    background-color: black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 .MoreInfo{
     font-family: Righteous;
     text-align: center;
     color: white;
     font-size: 4rem;
-}
-
-.LocationCard:hover{
-    position: relative;
-    right: 0.5rem;
-    bottom: 0.5rem;
-    transition: all 0.3s ease;
-    box-shadow: rgba(98, 98, 98, 0.409) 10px 10px
 }
 
 .Owner{
@@ -48,12 +14,17 @@
     font-family: Righteous;
     color: white;
     position: relative;
-    top: 150rem;
-    right: 10rem;
+    top: -160rem;
+    left: 60rem;
 }
 
 .Owner img{
     width: 25%;
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: .5rem;
+    border-color: rgb(111, 147, 110);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
 }
 
 .Owner h1{
@@ -64,47 +35,10 @@
     font-size: 3rem;
 }
 
-.LocationInfo{
-    background-color: black;
-    margin: 2rem;
-    border-radius: 2rem;
-    padding: 2rem;
-    display: flex;
-    font-family: Righteous;
+.Code{
+    color: black;
+    font-size: .3rem;
 }
 
-.LocationInfo p{
-    text-align: center;
-    color: white;
-    font-size: 6rem;
-    margin-bottom: 2rem;
-}
 
-.LocationInfo img{
-    width: 50%;
-    border-radius: 2rem;
-    cursor: pointer;
-}
 
-.LocationLogo ul{
-    list-style: none;
-    display: flex;
-}
-
-.LocationLogo{
-    width: 50%;
-}
-
-.LocationDetails{
-    width: 50%;
-}
-
-.LocationInfo ul{
-    color: white;
-    font-size: 2rem;
-}
-
-.LocationDetails ul li{
-    list-style: georgian;
-    margin-bottom: 4.5rem;
-}

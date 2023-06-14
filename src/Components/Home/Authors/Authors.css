@@ -1,5 +1,10 @@
 .AuthorsItems img{
     width: 50%;
+    border-radius: 80%;
+    border-style: dashed;
+    border-width: 1rem;
+    border-color: rgb(195, 195, 195);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
 }
 
 .AuthorsItems{
@@ -13,7 +18,8 @@
     font-size: 3rem;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgb(28, 28, 28);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
 }
 
 .FullAuthorsList h1{
@@ -38,6 +44,11 @@
 
 .Honorable img{
     width: 50%;
+    border-radius: 80%;
+    border-style: dashed;
+    border-width: .5rem;
+    border-color: rgb(195, 195, 195);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
 }
 
 .FullHonor{
@@ -76,10 +87,12 @@
 .Honorable p{
     text-align: center;
     font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.548);
     padding: 1rem;
     border-radius: 2rem;
     margin: 0.5rem;
+    background-color: rgb(28, 28, 28);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+
 }
 
 .SpecialThanks{
@@ -96,6 +109,11 @@
 
 .SpecialThanks img{
     width: 25%;
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: .5rem;
+    border-color: rgb(220, 125, 227);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
 }
 
 .SpecialThanks h1{

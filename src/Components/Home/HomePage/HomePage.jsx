@@ -6,10 +6,11 @@ import Authors from "../Authors/Authors";
 import Location from "../Location/Location";
 import styles from "./HomePage.module.css";
 import { useStateContext } from "../../../context/StateContext";
+import NavBar from "../../NavBar/NavBar";
 
 const HomePage = () => {
   const [ModuleCategory, setModuleCategory] = useState("General");
-  const { currentPage, setCurrentPage } = useStateContext();
+  const {setCurrentPage, selectedBackground}= useStateContext();
   useEffect(() => {
     setCurrentPage("Trinity");
   }, []);
@@ -27,7 +28,8 @@ const HomePage = () => {
     }
   };
   return (
-    <div>
+    <div style={{backgroundImage: `url(${selectedBackground})`}}>
+      <NavBar/>
       <Title />
       <div className={styles.Body}>
         <TabNavBar

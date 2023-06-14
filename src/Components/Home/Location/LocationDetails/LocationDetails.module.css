@@ -1,0 +1,55 @@
+.Location{
+    display: flex;
+    font-family: Righteous;
+    color: white;
+}
+
+.Location img{
+    width: 60%;
+    border-radius: 2rem;
+}
+
+.Location p{
+    margin: .25rem;
+}
+
+.LeftLocationCard, .MidLocationCard, .RightLocationCard{
+    width: 35rem;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(28, 28, 28);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+}
+
+.LeftLocationCard:hover{
+    position: relative;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(98, 98, 98, 0.409) 10px 10px;
+}
+
+.MidLocationCard:hover{
+    position: relative;
+    bottom: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(98, 98, 98, 0.409) 0px 10px;
+}
+
+.RightLocationCard:hover{
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(98, 98, 98, 0.409) -10px 10px;
+}
+
+.Code{
+    color: black;
+    font-size: .3rem;
+}

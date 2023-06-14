@@ -9,9 +9,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
     border-radius: 2rem;
-    box-shadow: rgba(44, 40, 40, 0.68) 5px 5px;
+    background-color: rgb(28, 28, 28);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
 }
 
 .Search input{
@@ -31,8 +31,10 @@
     font-weight:bold;
     font-size: 1.5rem;
     display: flex;
-    width: 1rem;
+    width: 6rem;
     justify-content: center;
+    padding: 1rem;
+    display: flex;
 }
 
 

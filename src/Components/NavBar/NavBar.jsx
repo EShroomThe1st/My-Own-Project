@@ -3,13 +3,13 @@ import { Stack } from '@mui/material';
 import {NavOptions} from '../../Share/NavOptions';
 import './NavBar.css'
 
-const NavBar = ({Category, setCategory}) => (
+const NavBar = () => (
     <Stack direction='row' className='Nav'>
         <Stack direction='row' >
             <ul>
             {NavOptions.map((option)=>(
-                <li key={option.name}><button className={option.name} 
-                onClick={() => setCategory(option.name)}>{option.icon}{option.name}</button></li>
+                <li key={option.name}><a className={option.name} 
+                href={option.name}>{option.icon}{option.name}</a></li>
             ))}
             </ul>
         </Stack>

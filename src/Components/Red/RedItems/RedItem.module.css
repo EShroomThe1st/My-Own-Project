@@ -1,0 +1,104 @@
+.FullItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Items{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.ItemsImage{
+    width: 50%;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    border-width: 0.5rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    cursor:pointer;
+}
+
+.ItemsName{
+    display: none;
+    width: 30%;
+    font-family: fantasy;
+    font-weight: light;
+    color: rgb(252, 83, 83);
+    align-self: center;
+    justify-self: center; 
+    text-align: center;
+    margin-top: -6.4rem;
+    margin-right: 1rem;
+    z-index: 1000;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.Items:hover .ItemsName{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    transition: all 0.3s ease;
+}
+
+
+.Items:hover .ItemsImage{
+    filter: brightness(50%);
+    width: 45%;
+    margin-bottom: 0;
+    box-shadow: rgb(252, 83, 83) 0px 0px 0px 3px inset, black 0px 0px 0px 5px, rgb(252, 83, 83) 0px 0px 0px 10px, black 0px 0px 0px 16px, rgb(252, 83, 83) 0px 0px 0px 19px;
+    transition: all 0.3s ease;
+}
+
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset, rgba(252, 83, 83, 0.71) 0px 5px 15px;
+    z-index: 9999; /* Ensure the popup appears above other elements */
+  }
+
+  .popup img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+  
+  .popup h1 {
+    margin-top: 0;
+    font-family: fantasy;
+    font-weight: light;
+    color: rgb(252, 83, 83);
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    font-weight: bolder;
+    font-family: fantasy;
+    font-weight: light;
+  }
+
+
+  
+  .popup .content {
+    max-height: 200px;
+    overflow: auto;
+    font-family: fantasy;
+    font-weight: light;
+    color: rgb(252, 83, 83);
+    overflow: hidden;
+  }
+

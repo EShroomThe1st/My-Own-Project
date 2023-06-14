@@ -1,10 +1,10 @@
 import React from 'react'
-import Banner from "../../Banner/Banner.jsx";
-import { Images, ModuleNav } from "../../../Share/NavOptions.js";
-import Introduction from "../Introduction/Introduction.jsx";
-import RedIntro from "../RedIntro/RedIntro.jsx";
-import YellowIntro from "../YellowIntro/YellowIntro.jsx";
-import BlueIntro from "../BlueIntro/BlueIntro.jsx";
+import Banner from "../Banner/Banner"
+import { Images, RedBanner} from "../../../Share/NavOptions.js";
+import Introduction from "./Introduction/Introduction.jsx";
+import RedIntro from "./RedIntro/RedIntro.jsx";
+import YellowIntro from "./YellowIntro/YellowIntro.jsx";
+import BlueIntro from "./BlueIntro/BlueIntro.jsx";
 import styles from "./General.module.css"
 
 const General = () => {

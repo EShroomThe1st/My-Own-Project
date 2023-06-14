@@ -1,0 +1,74 @@
+.FullSponsored{
+    font-family: Righteous;
+    color: white;
+    text-align: center;
+}
+
+.SponsoredBy img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.SponsoredBy h1{
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.HappyMilk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 142, 213);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset;;
+}
+
+.HappyMilk:hover{
+    position: relative;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset,rgba(0, 142, 213, 0.509) 10px 10px;
+}
+
+.HappyMilk p{
+    margin: 0;
+}
+
+.LHD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(214, 2, 210);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset;
+}
+
+.LHD:hover{
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset,rgba(214, 2, 210, 0.518) -10px 10px;
+}
+
+.LHD p{
+    margin: 0;
+}
+
+.SponsoredBy{
+    font-family: Righteous;
+    display: flex;
+    width: 50rem;
+    justify-self: center;
+}
+
+.FullSponsored{
+    display: grid;
+}

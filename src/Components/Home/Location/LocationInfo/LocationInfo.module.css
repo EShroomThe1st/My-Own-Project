@@ -1,0 +1,53 @@
+.LocationInfo{
+    background-color: rgb(28, 28, 28);
+    margin: 2rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    font-family: Righteous;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+}
+
+.LocationInfo p{
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.LocationInfo img{
+    width: 50%;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+}
+
+.LocationLogo ul{
+    list-style: none;
+    display: flex;
+}
+
+.LocationLogo{
+    width: 50%;
+}
+
+.LocationDetails{
+    width: 50%;
+}
+
+.LocationInfo ul{
+    color: white;
+    font-size: 2rem;
+}
+
+.LocationDetails ul li{
+    list-style: georgian;
+    margin-bottom: 4.5rem;
+}
+
+.Icon:hover{
+    position: relative;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.3s ease;
+}

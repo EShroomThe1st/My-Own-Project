@@ -8,6 +8,7 @@
     margin-top: 4rem;
     margin: 2rem;
     font-family: Righteous;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset;
   }
 
   .Introduction span{
@@ -31,10 +32,9 @@
 
   .FullIntro :hover{
     position: relative;
-    right: 1rem;
     bottom: 1rem;
     offset: 1rem;
-    box-shadow: rgba(72, 255, 75, 0.68) 5px 5px, rgba(249, 255, 72, 0.68) 10px 10px, rgba(255, 170, 72, 0.68) 15px 15px, rgba(255, 72, 72, 0.68) 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset,rgba(72, 255, 75, 0.68) 0px 5px, rgba(249, 255, 72, 0.68) 0px 10px, rgba(255, 170, 72, 0.68) 0px 15px, rgba(255, 72, 72, 0.68) 0px 20px;
     transition: all 0.3s ease;
 }
 
@@ -53,7 +53,7 @@
     background-color: rgb(0, 153, 255);
     border-radius: 2rem;
     margin-top: 2rem;
-    box-shadow: rgba(241, 81, 81, 0.68) 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(241, 81, 81, 0.68) 5px 5px;
     margin: 2rem;
 }
 
@@ -85,7 +85,7 @@
     right: 1rem;
     bottom: 1rem;
     offset: 1rem;
-    box-shadow: rgba(241, 81, 81, 0.68) 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(241, 81, 81, 0.68) 10px 10px;
     transition: all 0.3s ease;
     color: red;
 }
@@ -104,7 +104,7 @@
     background-color: rgb(215, 215, 73);
     border-radius: 2rem;
     margin-top: 2rem;
-    box-shadow: rgba(241, 81, 81, 0.68) 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(241, 81, 81, 0.68) -5px 5px;
     font-family: monospace;
 }
 
@@ -128,17 +128,17 @@
  
 .RandomMess :hover{
     position: relative;
-    right: 1rem;
+    left: 1rem;
     bottom: 1rem;
     offset: 1rem;
-    box-shadow: rgba(241, 81, 81, 0.68) 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(241, 81, 81, 0.68) -10px 10px;
     transition: all 0.3s ease;
     color: red;
 }
 
 .Message h1, p{
     box-shadow: none !important;
-    right: unset !important;
+    left: unset !important;
     bottom: unset !important;
   }
 

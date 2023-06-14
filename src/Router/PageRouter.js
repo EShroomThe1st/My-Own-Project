@@ -1,9 +1,9 @@
 import React from 'react'
 import App from '../App'
-import MainPage from '../Components/MainPage/MainPage'
-import RedPage from '../Components/Red/RedPage/RedPage'
-import Random from '../Components/Random'
+import HomePage from '../Components/Home/HomePage/HomePage';
+import RedPage from '../Components/Red/RedPage/RedPage';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Random from '../Components/Random';
 
 const router = createBrowserRouter([
     {
@@ -12,12 +12,24 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <MainPage/>,
+                element: <HomePage/>,
             },
             {
-                path: "home",
-                element: <MainPage/>
-            }
+                path: "Home",
+                element: <HomePage/>
+            },
+            {
+                path: "Red",
+                element: <RedPage/>
+            },
+            {
+                path: "Yellow",
+                element: <Random/>
+            },
+            {
+                path: "Blue",
+                element: <Random/>
+            },
         ]
     }
 ])

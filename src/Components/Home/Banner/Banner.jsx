@@ -6,7 +6,7 @@ const Carousel = ({Images}) => {
   const images = Images;
   const [currentImage, setCurrentImage] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-
+  
   const toImage = (imgNum) => {
     setCurrentImage(imgNum);
   };
@@ -48,13 +48,13 @@ nextImage()
             transform: `translateX(-${currentImage * 100}%)`,
           }}
         >
-          {images.map((image) => (
+          {images.map((image, index) => (
             <div key={image.id} className={styles["image-wrapper"]}>
               <img
                 src={image.src}
                 alt={`${image.id}`}
                 className={
-                  parseInt(image.id) === parseInt(currentImage) ? `${styles.active}` : ""
+                  parseInt(index) === parseInt(currentImage) ? `${styles.active}` : ""
                 }
               />
             </div>
@@ -62,8 +62,8 @@ nextImage()
         </div>
       </div>
       <div className={styles.btn}>
-        {images.map((image) => (
-          <button key={image.id} onClick={() => toImage(image.id)}></button>
+        {images.map((image, index) => (
+          <button key={index} onClick={() => toImage(index)}></button>
         ))}
       </div>
     </div>
