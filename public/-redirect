@@ -1,5 +1,5 @@
-# Redirects from what the browser requests to what we serve
-/home        /
-/red         /red
-/yellow      /yellow
-/blue        /blue
+/* /index.html 200
+/home        / 200        
+/red         /red 200
+/yellow      /yellow 200
+/blue        /blue 200
