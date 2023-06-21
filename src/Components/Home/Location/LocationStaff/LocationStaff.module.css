@@ -121,8 +121,8 @@
     border-color: rgb(170, 170, 95);
     border-width: .5rem;
     border-radius: 2rem;
-    width: 90%;
-    height: 80%;
+    width: 1367.280px;
+    height: 583.037px;
     padding: 20px;
     z-index: 9999; /* Ensure the popup appears above other elements */
     transition: all 5s ease-in-out;
