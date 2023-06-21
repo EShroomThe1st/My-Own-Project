@@ -1,13 +1,6 @@
 import { Map, AccountCircle, BusinessCenter, DeviceHub, Home, Brightness7, AccountBalance, FitnessCenter, PsychologyAlt, Carpenter } from '@mui/icons-material'
 import React from 'react'
 
-export const NavOptions = [
-    {name: 'Home', icon:<Home/>, link:"home"},
-    {name: 'Red', icon:<Brightness7/>, link:"red"},
-    {name: 'Yellow', icon: <DeviceHub/>, link:"yellow"},
-    {name: 'Blue', icon: <BusinessCenter/>, link:"blue"}
-]
-
 export const ModuleNav =[
     {name: 'General', icon:<AccountBalance/>},
     {name: 'Authors', icon:<AccountCircle/>},

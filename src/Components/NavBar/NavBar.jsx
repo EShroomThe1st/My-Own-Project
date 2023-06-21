@@ -1,5 +1,4 @@
 import { Stack } from '@mui/material';
-import {NavOptions} from '../../Share/NavOptions';
 import styles from './NavBar.module.css'
 import { Link } from 'react-router-dom';
 import { Brightness7, BusinessCenter, DeviceHub, Home } from '@mui/icons-material';
