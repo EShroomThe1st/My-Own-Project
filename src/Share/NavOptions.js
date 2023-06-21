@@ -1,4 +1,4 @@
-import { Map, AccountCircle, BusinessCenter, DeviceHub, Home, Brightness7, AccountBalance, FitnessCenter, PsychologyAlt, Carpenter } from '@mui/icons-material'
+import { Map, AccountCircle, AccountBalance, FitnessCenter, PsychologyAlt, Carpenter } from '@mui/icons-material'
 import React from 'react'
 
 export const ModuleNav =[
