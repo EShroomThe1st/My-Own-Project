@@ -3,7 +3,7 @@ import RedNav from "../RedNav/RedNav";
 import styles from "./RedPage.module.css";
 import RedTitle from "../RedTitle/RedTitle";
 import { useStateContext } from "../../../context/StateContext";
-import { RedMessages } from "../../../Share/NavOptions";
+
 import RedTabContents from "../RelatedContent/RedTabContent/RedTabContents";
 import RedItems from "../RedItems/RedItem";
 import NavBar from "../../NavBar/NavBar";
