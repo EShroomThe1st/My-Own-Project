@@ -4,7 +4,7 @@ import styles from './RedTitle.module.css'
 const RedTitle = () => {
   return (
     <div className={styles.RedTitle}>
-        <img src='/asset/img/Red-Title.png'/>
+        <img src='/asset/img/Red-Title.png' alt=''/>
     </div>
   )
 }

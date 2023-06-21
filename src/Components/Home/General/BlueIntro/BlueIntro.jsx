@@ -14,7 +14,7 @@ const BlueIntro = () => {
                 <p>You just want to stay and enjoy what time you have left</p>
                 <p>Go ahead</p>
             </div>
-                <img src='asset/img/Blue-Img.png'></img>
+                <img src='asset/img/Blue-Img.png' alt=''></img>
                 <div className={styles.BlueIntroR}>
                     <h1>Blue</h1>
                     <p className={styles.BlueSubR}>You want to protect them</p>

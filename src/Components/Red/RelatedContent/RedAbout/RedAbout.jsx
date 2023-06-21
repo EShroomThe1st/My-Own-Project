@@ -39,7 +39,7 @@ const RedAbout = () => {
             <div className={styles.overlay}>
               <Grow in={true}>
                 <div className={styles.popup}>
-                  <a className={styles.close} onClick={closePopup}>
+                  <a className={styles.close} onClick={closePopup} href=''>
                     &times;
                   </a>
                   <div className={styles.Content}>
@@ -91,10 +91,10 @@ const RedAbout = () => {
                     </div>
                   </div>
 
-                  <a className={styles.NavigateBack} onClick={navigateBackward}>
+                  <a className={styles.NavigateBack} onClick={navigateBackward} href=''>
                   &lt;
                   </a>
-                  <a className={styles.NavigateForward} onClick={navigateForward}>
+                  <a className={styles.NavigateForward} onClick={navigateForward} href=''>
                   &gt;
                   </a>
                 </div>

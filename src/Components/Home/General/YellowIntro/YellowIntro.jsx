@@ -13,7 +13,7 @@ return (
                         <p>Understanding yourself more</p>
                         <p>Who are you really?</p>
                     </div>
-                    <img src='asset/img/Yellow-Img.png'></img>
+                    <img src='asset/img/Yellow-Img.png' alt=''></img>
                 </div>
   )
 }

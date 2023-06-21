@@ -1,11 +1,10 @@
 import React from 'react'
-import { Box } from '@mui/material'
 import styles from './RedIntro.module.css'
 
 const RedIntro = () => {
 return (
                 <div className={styles.RedIntroduction}>
-                    <img src='asset/img/Red-Img.png'></img>
+                    <img src='asset/img/Red-Img.png' alt=''></img>
                     <div className={styles.RedIntro}>
                         <h1>Red</h1>
                         <p className={styles.RedSub}>You want destruction</p>

@@ -17,7 +17,7 @@ const LocationInfo = () => {
           <ul>
             {locationlogo.map((option) => (
               <li key={option.name}>
-                <img src={option.img} className={styles.Icon} />
+                <img src={option.img} className={styles.Icon} alt=""/>
               </li>
             ))}
           </ul>

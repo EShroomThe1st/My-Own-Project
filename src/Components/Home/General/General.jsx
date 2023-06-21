@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from "../Banner/Banner"
-import { Images, RedBanner} from "../../../Share/NavOptions.js";
+import { Images} from "../../../Share/NavOptions.js";
 import Introduction from "./Introduction/Introduction.jsx";
 import RedIntro from "./RedIntro/RedIntro.jsx";
 import YellowIntro from "./YellowIntro/YellowIntro.jsx";

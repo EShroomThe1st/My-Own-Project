@@ -33,8 +33,9 @@ const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
               src={options.img}
               className={styles.ItemsImage}
               onClick={() => openPopUp(options)}
+              alt=''
             />
-            <a key={index} className={styles.ItemsName} id="openPopUp" onClick={() => openPopUp(options)}>
+            <a key={index} className={styles.ItemsName} href='' id="openPopUp" onClick={() => openPopUp(options)}>
               {options.name}
             </a>
           </div>
@@ -47,7 +48,7 @@ const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
                 <div className={styles.popup}>
                   <img src={selectedItem.img} alt="" />
                   <h1>{selectedItem.name}</h1>
-                  <a className={styles.close} onClick={closePopup}>
+                  <a className={styles.close} href='' onClick={closePopup}>
                     &times;
                   </a>
                   <div className={styles.content}>{selectedItem.info}</div>

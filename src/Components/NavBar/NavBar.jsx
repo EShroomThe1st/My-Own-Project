@@ -14,11 +14,11 @@ const NavBar = () => (
             </ul>
         </Stack>
         <Stack>
-        <a href=''><img className='Icon' src='/asset/img/Page-Logo.png'/></a>
+        <a href='home'><img className='Icon' src='/asset/img/Page-Logo.png' alt=''/></a>
         </Stack>
         <Stack className='Search' direction='row'>
             <input type='text' id='SearchBox' name='SearchBox' placeholder='Search Box'></input>
-            <img className='SearchIcon' src='/asset/img/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png'/>
+            <img className='SearchIcon' src='/asset/img/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png' alt=''/>
         </Stack>
     </Stack>
 )

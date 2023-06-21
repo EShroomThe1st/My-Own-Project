@@ -25,7 +25,7 @@ const Location = () => {
       <LocationStaff/>
       <div className={styles.Owner}>
         <h1>Owner</h1>
-        <img src="asset/img/Granny.png"/>
+        <img src="asset/img/Granny.png" alt=''/>
         <p>Granny</p>
       </div>
     </div>

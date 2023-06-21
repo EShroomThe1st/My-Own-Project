@@ -29,7 +29,7 @@ const RedTabContents = ({ModuleCategory, setModuleCategory}) => {
                   {ModuleCategory === "Default" && (
                   <div className={styles.WhitePigeon}>
                     <img
-                      src="asset/img/WhitePigeon.png"
+                      src="asset/img/WhitePigeon.png" alt=''
                     />
                     <h1>Be Free</h1>
                     <p>
