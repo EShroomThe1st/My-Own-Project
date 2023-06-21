@@ -1,33 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './Banner.module.css';
-import { useEffect } from "react";
 
-const Carousel = ({Images}) => {
+const Carousel = ({ Images }) => {
   const images = Images;
   const [currentImage, setCurrentImage] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  
+
   const toImage = (imgNum) => {
     setCurrentImage(imgNum);
   };
 
-  const nextImage = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentImage((currentImage + 1) % images.length);
-        setIsTransitioning(false);
-      }, 300); // Adjust the delay time as needed
-    }
-  };
-
   useEffect(() => {
+    const nextImage = () => {
+      if (!isTransitioning) {
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentImage((currentImage + 1) % images.length);
+          setIsTransitioning(false);
+        }, 300); // Adjust the delay time as needed
+      }
+    };
+
     const interval = setInterval(() => {
-nextImage()
+      nextImage();
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [currentImage, images.length, nextImage]);
+  }, [currentImage, images.length, isTransitioning, images]);
 
   return (
     <div className={styles.carousel}>

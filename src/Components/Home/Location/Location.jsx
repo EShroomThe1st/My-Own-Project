@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styles from './Location.module.css'
 import LocationInfo from './LocationInfo/LocationInfo';
 import LocationDetails from './LocationDetails/LocationDetails';
