@@ -1,6 +1,5 @@
 # Redirects from what the browser requests to what we serve
-
-/home
-/red
-/yellow
-/blue
+/home        /
+/red         /red
+/yellow      /yellow
+/blue        /blue
