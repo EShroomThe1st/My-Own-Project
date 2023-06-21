@@ -39,9 +39,9 @@ const RedAbout = () => {
             <div className={styles.overlay}>
               <Grow in={true}>
                 <div className={styles.popup}>
-                  <a className={styles.close} onClick={closePopup} href=''>
+                  <span className={styles.close} onClick={closePopup}>
                     &times;
-                  </a>
+                  </span>
                   <div className={styles.Content}>
                     <img  className={styles.BookImages} src={options.img} alt={`Page ${options.page}`} />
                     <div className={styles.Poem}>
@@ -91,12 +91,12 @@ const RedAbout = () => {
                     </div>
                   </div>
 
-                  <a className={styles.NavigateBack} onClick={navigateBackward} href=''>
+                  <span className={styles.NavigateBack} onClick={navigateBackward}>
                   &lt;
-                  </a>
-                  <a className={styles.NavigateForward} onClick={navigateForward} href=''>
+                  </span>
+                  <span className={styles.NavigateForward} onClick={navigateForward}>
                   &gt;
-                  </a>
+                  </span>
                 </div>
               </Grow>
             </div>

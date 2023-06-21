@@ -13,7 +13,7 @@ export const StateContext = ({ children }) => {
     if (background) {
       setSelectedBackground(background.background);
     }
-  }, [currentPage])
+  }, [currentPage,currentPage1])
 
   return (
     <Context.Provider value={{ currentPage, setCurrentPage, selectedBackground }}>

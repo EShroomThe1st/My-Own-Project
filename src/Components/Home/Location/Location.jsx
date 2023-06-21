@@ -6,16 +6,6 @@ import LocationStaff from './LocationStaff/LocationStaff';
 import Sponsor from './Sponsor/Sponsor';
 
 const Location = () => {
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const openPopUp = (item) => {
-    setSelectedItem(item);
-  }
-
-  const closePopup = () => {
-    setSelectedItem(null);
-  };
-
   return (
     <div className={styles.FullLocation}>
       <LocationDetails/>

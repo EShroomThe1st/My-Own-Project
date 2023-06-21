@@ -14,7 +14,7 @@ const HomePage = () => {
   const {setCurrentPage, selectedBackground}= useStateContext();
   useEffect(() => {
     setCurrentPage("Trinity");
-  }, []);
+  }, [setCurrentPage]);
 
   const renderComponent = (name) => {
     switch (name) {

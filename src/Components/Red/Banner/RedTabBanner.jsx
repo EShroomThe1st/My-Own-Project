@@ -6,10 +6,6 @@ const Carousel = ({Images}) => {
   const images = Images;
   const [currentImage, setCurrentImage] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  
-  const toImage = (imgNum) => {
-    setCurrentImage(imgNum);
-  };
 
   const nextImage = () => {
     if (!isTransitioning) {
@@ -21,23 +17,13 @@ const Carousel = ({Images}) => {
     }
   };
 
-  const prevImage = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentImage((currentImage - 1 + images.length) % images.length);
-        setIsTransitioning(false);
-      }, 300); // Adjust the delay time as needed
-    }
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
 nextImage()
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [currentImage, images.length]);
+  }, [currentImage, images.length, nextImage]);
 
   return (
     <div className={styles.carousel}>

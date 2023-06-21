@@ -35,9 +35,9 @@ const BrainstormItems = ({ ModuleCategory, setModuleCategory }) => {
                 onClick={() => openPopUp(options)}
                 alt=''
               />
-              <a key={index} href='' className={styles.ItemsName} id="openPopUp" onClick={() => openPopUp(options)}>
+              <span key={index} className={styles.ItemsName} id="openPopUp" onClick={() => openPopUp(options)}>
                 {options.name}
-              </a>
+              </span>
             </div>
           ))}
         </div>
@@ -48,9 +48,9 @@ const BrainstormItems = ({ ModuleCategory, setModuleCategory }) => {
                   <div className={styles.popup}>
                     <img src={selectedItem.img} alt="" />
                     <h1>{selectedItem.name}</h1>
-                    <a className={styles.close} href='' onClick={closePopup}>
+                    <span className={styles.close} onClick={closePopup}>
                       &times;
-                    </a>
+                    </span>
                     <div className={styles.content}>{selectedItem.info}</div>
                   </div>
               </Grow>

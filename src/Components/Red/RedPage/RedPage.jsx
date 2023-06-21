@@ -18,7 +18,7 @@ const RedPage = () => {
 
   useEffect(() => {
     setCurrentPage("Red");
-  }, []);
+  }, [setCurrentPage]);
 
   return (
     <div className={styles.RedBackground} style={{backgroundImage: `url(${selectedBackground})`, width:"1518px"}}>

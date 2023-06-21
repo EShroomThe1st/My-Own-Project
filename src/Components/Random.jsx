@@ -9,7 +9,7 @@ const Random = () => {
     <NavBar/>
     <div className={styles.RandomLoading}>
       <h1>This page doesn't exist</h1>
-      <img src='asset/img/Random2.png' className={`${styles.Random} ${styles.Spin}`}/>
+      <img src='asset/img/Random2.png' alt="" className={`${styles.Random} ${styles.Spin}`}/>
       <p>Please got back</p>
     </div>
     <Footer/>

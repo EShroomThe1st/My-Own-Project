@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { File } from '../../../../Share/NavOptions';
 import styles from './LocationStaff.module.css'
-import { Slide } from 'react-slideshow-image';
 import { Grow } from '@mui/material';
 
 const LocationStaff = () => {
@@ -34,7 +33,7 @@ const LocationStaff = () => {
                   <p>
                     {options.name}
                   </p>
-                  <img src={options.img} className={styles.FileImg}/>
+                  <img src={options.img} className={styles.FileImg} alt=''/>
                 </div>
               ))}
         </div>
@@ -46,9 +45,9 @@ const LocationStaff = () => {
                         <img src={selectedItem.porfolio} alt="" />
                         <h1>{selectedItem.name}</h1>
                         <h2>{selectedItem.role}</h2>
-                        <a className={styles.close} onClick={closePopup}>
+                        <span className={styles.close} href='' onClick={closePopup}>
                           &times;
-                        </a>
+                        </span>
                           <div className={styles.content}>{selectedItem.info}</div>
                           <div className={styles.content}>{selectedItem.info2}</div>
                           <div className={styles.content}>{selectedItem.info3}</div>

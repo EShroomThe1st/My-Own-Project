@@ -37,13 +37,12 @@ const RedItem = ({ModuleCategory, setModuleCategory}) => {
               onClick={() => openPopUp(options)}
               alt=''
             />
-            <a
+            <span
               key={index}
               className={styles.ItemsName} id="openPopUp" onClick={() => openPopUp(options)}
-              href=''
             >
               {options.name}
-            </a>
+            </span>
           </div>
         ))}
           </div>
@@ -56,9 +55,9 @@ const RedItem = ({ModuleCategory, setModuleCategory}) => {
                 <div className={styles.popup}>
                   <img src={selectedItem.img} alt="" />
                   <h1>{selectedItem.name}</h1>
-                  <a className={styles.close} href='' onClick={closePopup}>
+                  <span className={styles.close} onClick={closePopup}>
                     &times;
-                  </a>
+                  </span>
                   <div className={styles.content}>{selectedItem.info}</div>
                 </div>
               </Grow>
