@@ -113,8 +113,8 @@
 
 .popup {
     position: fixed;
-    top: 10%;
-    left: 3%;
+    top: 5%;
+    left: 2%;
     transform: translate(-50%, -50%);
     background-color: white;
     border-style: solid;
@@ -122,7 +122,7 @@
     border-width: .5rem;
     border-radius: 2rem;
     width: 1367.280px;
-    height: 583.037px;
+    height: 600.037px;
     padding: 20px;
     z-index: 9999; /* Ensure the popup appears above other elements */
     transition: all 5s ease-in-out;
