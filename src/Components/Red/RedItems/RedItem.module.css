@@ -23,13 +23,13 @@
 .ItemsName{
     display: none;
     width: 30%;
-    font-family: fantasy;
-    font-weight: light;
+    font-family: Kanit;
+    font-weight: bold;
     color: rgb(252, 83, 83);
     align-self: center;
     justify-self: center; 
     text-align: center;
-    margin-top: -6.4rem;
+    margin-top: -9.4rem;
     margin-right: 1rem;
     z-index: 1000;
     cursor:pointer;
@@ -84,17 +84,15 @@
     top: 25px;
     right: 25px;
     font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
     color: #333;
-    font-weight: bolder;
-    font-family: fantasy;
-    font-weight: light;
+    font-family: Kanit;
+    font-weight: bold;
     border-radius: 50%;
     width: 2.8rem;
     height: 2.4rem;
     text-align: center;
     cursor: pointer;
+    padding-bottom: .5rem;
   }
 
   .close:hover{
@@ -107,8 +105,8 @@
   .popup .content {
     max-height: 200px;
     overflow: auto;
-    font-family: fantasy;
-    font-weight: light;
+    font-family: Kanit;
+    font-weight: bold;
     color: rgb(252, 83, 83);
     overflow: hidden;
   }

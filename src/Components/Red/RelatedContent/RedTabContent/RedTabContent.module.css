@@ -1,7 +1,7 @@
   .ContentHeader{
     font-size: 3rem;
-    font-family: fantasy;
-    font-weight: lighter;
+    font-family: Kanit;
+    font-weight: bold;
     text-align: center;
     align-self: center;
     margin-bottom: -2rem;
@@ -9,8 +9,8 @@
   }
 
   .Content{
-    font-family: fantasy;
-    font-weight: light;
+    font-family: Kanit;
+    font-weight: bold;
     text-align: center;
     align-self: center;
     margin-top: -2rem;
@@ -23,8 +23,8 @@
 
   .ContentFooter{
     font-size: 2rem;
-    font-family: fantasy;
-    font-weight: light;
+    font-family: Kanit;
+    font-weight: bold;
     text-align: center;
     align-self: center;
   }
@@ -42,8 +42,7 @@
 
   .WhitePigeon h1{
     font-size: 3rem;
-    font-family: fantasy;
-    font-weight: lighter;
+    font-family: Righteous;
     text-align: center;
     align-self: center;
     margin-bottom: -2rem;

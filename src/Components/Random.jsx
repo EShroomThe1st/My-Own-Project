@@ -10,7 +10,7 @@ const Random = () => {
     <div className={styles.RandomLoading}>
       <h1>This page doesn't exist</h1>
       <img src='asset/img/Random2.png' alt="" className={`${styles.Random} ${styles.Spin}`}/>
-      <p>Please got back</p>
+      <p>Please go back</p>
     </div>
     <Footer/>
     </div>

@@ -14,7 +14,7 @@ const RedTabContents = ({ModuleCategory, setModuleCategory}) => {
         <div key={index} style={{display:"grid"}}>
            { options.id === ModuleCategory && (
             <>
-              <div className={styles.ContentBox} style={{backgroundColor:options.backgroundcolor, borderRadius:"2rem", color:options.textcolor, padding:"2rem", width:"50rem", display:"flex", flexDirection:"column", justifySelf:"center", height:"1445.200px"}}>
+              <div className={styles.ContentBox} style={{backgroundColor:options.backgroundcolor, borderRadius:"2rem", color:options.textcolor, padding:"2rem", width:"50rem", display:"flex", flexDirection:"column", justifySelf:"center"}}>
                   <h1 className={styles.ContentHeader}>{options.header}</h1>
                   <RedTabBanner Images={RedBanner.filter((image) => image.category === ModuleCategory)}/>
                   <p className={styles.Content}>{options.content}</p>
