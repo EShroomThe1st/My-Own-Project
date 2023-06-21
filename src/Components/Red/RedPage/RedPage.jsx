@@ -13,6 +13,7 @@ import Footer from "../../Footer/Footer";
 const RedPage = () => {
   const [ModuleCategory, setModuleCategory] = useState("Default");
   const { setCurrentPage, selectedBackground } = useStateContext();
+  const redMessages = RedMessages; // Define the redMessages variable
 
   useEffect(() => {
     setCurrentPage("Red");
