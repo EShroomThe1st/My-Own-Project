@@ -1,15 +1,15 @@
 import { Stack } from '@mui/material';
-
 import {NavOptions} from '../../Share/NavOptions';
 import './NavBar.css'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => (
     <Stack direction='row' className='Nav'>
         <Stack direction='row' >
             <ul>
             {NavOptions.map((option)=>(
-                <li key={option.name}><a className={option.name} 
-                href={option.link}>{option.icon}{option.name}</a></li>
+                <li key={option.name}><Link className={option.name} 
+                to={option.link}>{option.icon}{option.name}</Link></li>
             ))}
             </ul>
         </Stack>
