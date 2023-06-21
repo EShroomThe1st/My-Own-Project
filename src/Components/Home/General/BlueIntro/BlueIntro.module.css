@@ -21,9 +21,6 @@
 
 .BlueIntroduction h1{
     font-size: 4.5rem;
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
 }
 
 .BlueIntroduction h2, .BlueIntroduction p{
@@ -46,12 +43,6 @@
     offset: 1rem;
     box-shadow: rgba(38, 123, 138, 0.815) 10px 10px,rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset;
     transition: all 0.3s ease;
-}
-
-.BlueIntroL, .BlueIntroR{
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
 }
 
 .BlueSubL, .BlueSubR{

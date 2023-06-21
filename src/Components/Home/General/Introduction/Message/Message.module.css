@@ -1,0 +1,47 @@
+.RandomMessage{
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    padding: 2rem;
+    background-color: rgb(215, 215, 73);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(241, 81, 81, 0.68) -5px 5px;
+    font-family: monospace;
+}
+
+.RandomMessage h1{
+    margin: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.RandomMess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    box-shadow: 0;
+    width: 30rem;
+  }  
+ 
+.RandomMess :hover{
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    offset: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset,rgba(241, 81, 81, 0.68) -10px 10px;
+    transition: all 0.3s ease;
+    color: red;
+}
+
+.RandomMessage h1, p{
+    pointer-events: none;
+  }
+
+.Icon{
+    pointer-events: none;
+}

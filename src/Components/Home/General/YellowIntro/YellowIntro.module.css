@@ -25,9 +25,6 @@
 
 .YellowIntro h1{
     font-size: 4.5rem;
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
 }
 
 .YellowIntro h2{
@@ -55,18 +52,6 @@
 .YellowIntroduction:hover > .YellowIntro p, .YellowIntroduction:hover > .YellowIntro h2{
     color: rgb(0, 0, 0) !important;
     transition: all 0.3s ease;
-}
-
-.YellowIntroduction img{
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
-}
-
-.YellowIntro{
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
 }
 
 .YellowIntroduction img{

@@ -4,9 +4,11 @@ import styles from "./RedPage.module.css";
 import RedTitle from "../RedTitle/RedTitle";
 import { useStateContext } from "../../../context/StateContext";
 import {RedMessages} from "../../../Share/NavOptions";
-import RedTabContents from "../RedTabContent/RedTabContents";
+import RedTabContents from "../RelatedContent/RedTabContent/RedTabContents";
 import RedItems from "../RedItems/RedItem";
 import NavBar from "../../NavBar/NavBar";
+import RedAbout from "../RelatedContent/RedAbout/RedAbout";
+import Footer from "../../Footer/Footer";
 
 
 const RedPage = () => {
@@ -19,7 +21,7 @@ const RedPage = () => {
   }, []);
 
   return (
-    <div className={styles.RedBackground} style={{backgroundImage: `url(${selectedBackground})`}}>
+    <div className={styles.RedBackground} style={{backgroundImage: `url(${selectedBackground})`, width:"1518px"}}>
       <NavBar/>
       <RedTitle />
       <div className={styles.RedBody}>
@@ -34,22 +36,27 @@ const RedPage = () => {
         ModuleCategory={ModuleCategory}
         setModuleCategory={setModuleCategory}/>
         <div style={{display:'grid'}}>
-          <h2 style={{fontFamily:"Righteous", color:"#FC5353", textAlign:"center", backgroundColor:"black", borderRadius:"2rem", width:"19rem", display:"flex", justifySelf:"center", padding:"1rem"}}>Related Topic</h2>
+          <h2 style={{fontFamily:"Righteous", color:"#FC5353", textAlign:"center", backgroundColor:"black", borderRadius:"2rem", width:"22rem", display:"flex", justifySelf:"center", padding:"1rem"}}>Related Topics</h2>
         </div>
-        <RedTabContents
-        ModuleCategory={ModuleCategory}
-        setModuleCategory={setModuleCategory}/>
+        <div className={styles.RelatedTab}>
+          <RedTabContents
+          ModuleCategory={ModuleCategory}
+          setModuleCategory={setModuleCategory}/>
+          <RedAbout/>
+        </div>
+
         {redMessages?.map((options, index) => (
-            <div className={styles.RedMessages} key={index}>
-               { options.id === ModuleCategory && (
-                <>
-                <h1 className={styles.RedMessagesHeader}>{options.header}</h1>
-                <p className={styles.RedMessagesContent}>{options.content}</p>
-                </>
-                )}
-            </div>
-          ))}
+              <div className={styles.RedMessages} key={index}>
+                 { options.id === ModuleCategory && (
+                  <>
+                  <h1 className={styles.RedMessagesHeader}>{options.header}</h1>
+                  <p className={styles.RedMessagesContent}>{options.content}</p>
+                  </>
+                  )}
+              </div>
+            ))}
       </div>
+      <Footer/>
     </div>
   );
 };

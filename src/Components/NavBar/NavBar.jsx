@@ -9,7 +9,7 @@ const NavBar = () => (
             <ul>
             {NavOptions.map((option)=>(
                 <li key={option.name}><a className={option.name} 
-                href={option.name}>{option.icon}{option.name}</a></li>
+                href={option.link}>{option.icon}{option.name}</a></li>
             ))}
             </ul>
         </Stack>

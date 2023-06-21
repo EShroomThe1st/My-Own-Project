@@ -54,7 +54,7 @@ const RedItem = ({ModuleCategory, setModuleCategory}) => {
                 <div className={styles.popup}>
                   <img src={selectedItem.img} alt="" />
                   <h1>{selectedItem.name}</h1>
-                  <a className={styles.close} href="#close" onClick={closePopup}>
+                  <a className={styles.close} onClick={closePopup}>
                     &times;
                   </a>
                   <div className={styles.content}>{selectedItem.info}</div>

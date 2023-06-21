@@ -7,6 +7,7 @@ import Location from "../Location/Location";
 import styles from "./HomePage.module.css";
 import { useStateContext } from "../../../context/StateContext";
 import NavBar from "../../NavBar/NavBar";
+import Footer from "../../Footer/Footer";
 
 const HomePage = () => {
   const [ModuleCategory, setModuleCategory] = useState("General");
@@ -28,7 +29,7 @@ const HomePage = () => {
     }
   };
   return (
-    <div style={{backgroundImage: `url(${selectedBackground})`}}>
+    <div style={{backgroundImage: `url(${selectedBackground})`, width:"1518px"}}>
       <NavBar/>
       <Title />
       <div className={styles.Body}>
@@ -38,6 +39,7 @@ const HomePage = () => {
         />
         {renderComponent(ModuleCategory)}
       </div>
+      <Footer/>
     </div>
   );
 };

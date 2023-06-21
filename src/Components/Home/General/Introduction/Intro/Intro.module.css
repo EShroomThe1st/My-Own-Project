@@ -1,0 +1,42 @@
+.Introduction{
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    margin: 2rem;
+    font-family: Righteous;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset;
+  }
+
+  .Introduction span{
+    margin: 1rem;
+  }
+
+  .Introduction h1, h2 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .FullIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    box-shadow: 0;
+  }  
+
+  .FullIntro :hover{
+    position: relative;
+    bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset,rgba(72, 255, 75, 0.68) 0px 5px, rgba(249, 255, 72, 0.68) 0px 10px, rgba(255, 170, 72, 0.68) 0px 15px, rgba(255, 72, 72, 0.68) 0px 20px;
+    transition: all 0.3s ease;
+}
+
+.FullIntro h1, p, h2{
+    pointer-events: none;
+  }  

@@ -27,9 +27,6 @@
 .RedIntro h1{
     color: white;
     font-size: 4.5rem;
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
 }
 
 .RedIntro h2{
@@ -57,18 +54,6 @@
 
 .RedIntroduction > .RedIntro > .RedSub {
     font-size: 3rem;
-}
-
-.RedIntroduction img{
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
-}
-
-.RedIntro{
-    box-shadow: none !important;
-    right: unset !important;
-    bottom: unset !important;
 }
 
 .RedIntroduction img{

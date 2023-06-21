@@ -53,6 +53,7 @@
 
 .Items:hover .ItemsImage{
     filter: brightness(50%);
+    opacity: 70%;
     width: 80%;
     margin-bottom: 0;
     transition: all 0.3s ease;
@@ -90,7 +91,7 @@
   .popup .close {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 20px;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -98,6 +99,18 @@
     font-weight: bolder;
     font-family: Fredericka the Great;
     font-weight: light;
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.4rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .close:hover{
+    background-color: #333;
+    color: #a4ffe1;
+    transition: all .3s ease-in-out;
+    box-shadow: rgba(17, 17, 26, 0.317) 0px 8px 24px, rgba(17, 17, 26, 0.317) 0px 16px 56px, rgba(17, 17, 26, 0.317) 0px 24px 80px;
   }
   
   .popup .content {

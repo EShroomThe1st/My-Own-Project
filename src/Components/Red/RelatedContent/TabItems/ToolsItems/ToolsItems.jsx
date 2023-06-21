@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { SubRedItem } from '../../../../Share/NavOptions';
-import styles from './BruteForceItems.module.css';
+import { SubRedItem } from '../../../../../Share/NavOptions';
+import styles from './ToolsItems.module.css';
 import { Grow } from '@mui/material';
 
-const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
+const ToolsItems = ({ ModuleCategory, setModuleCategory }) => {
   const [redItems, setRedItems] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
-    if (ModuleCategory === 'Brute-Force') {
-      const filteredItems = SubRedItem.filter(item => item.id === 'Brute-Force');
+    if (ModuleCategory === 'Tools') {
+      const filteredItems = SubRedItem.filter(item => item.id === 'Tools');
       setRedItems(filteredItems);
     } else {
       setRedItems([]);
@@ -47,7 +47,7 @@ const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
                 <div className={styles.popup}>
                   <img src={selectedItem.img} alt="" />
                   <h1>{selectedItem.name}</h1>
-                  <a className={styles.close} href="#close" onClick={closePopup}>
+                  <a className={styles.close} onClick={closePopup}>
                     &times;
                   </a>
                   <div className={styles.content}>{selectedItem.info}</div>
@@ -60,4 +60,4 @@ const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
   );
 };
 
-export default BruteForceItems;
+export default ToolsItems;

@@ -15,19 +15,19 @@ const router = createBrowserRouter([
                 element: <HomePage/>,
             },
             {
-                path: "Home",
+                path: "home",
                 element: <HomePage/>
             },
             {
-                path: "Red",
+                path: "red",
                 element: <RedPage/>
             },
             {
-                path: "Yellow",
+                path: "yellow",
                 element: <Random/>
             },
             {
-                path: "Blue",
+                path: "blue",
                 element: <Random/>
             },
         ]

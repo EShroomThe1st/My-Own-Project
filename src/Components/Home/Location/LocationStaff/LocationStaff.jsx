@@ -21,12 +21,12 @@ const LocationStaff = () => {
           <h1>Staffs</h1>
         </div>
         <div className={styles.StaffAbout}>
-          <img src='asset/img/StaffImg.png' className={styles.StaffImages}/>
+          <img src='asset/img/StaffImg.jpg' className={styles.StaffImages}/>
           <div className={styles.Context}>
             <p>A list of the most trusted workers. The main brain power behind the shop. Without them, we wouldn't be here.</p>
             <p className={styles.Code}>54 72 75 73 74 20 74 68 65 6d 20 6d 6f 72 65</p>
           </div>
-          <img src='asset/img/Mastermind.png' className={styles.Mastermind}/>
+          <img src='asset/img/Mastermind.jpg' className={styles.Mastermind}/>
         </div>
         <div className={styles.FileHolder}>
           {File?.map((options, index) => (
@@ -46,7 +46,7 @@ const LocationStaff = () => {
                         <img src={selectedItem.porfolio} alt="" />
                         <h1>{selectedItem.name}</h1>
                         <h2>{selectedItem.role}</h2>
-                        <a className={styles.close} href="#close" onClick={closePopup}>
+                        <a className={styles.close} onClick={closePopup}>
                           &times;
                         </a>
                           <div className={styles.content}>{selectedItem.info}</div>
@@ -54,7 +54,7 @@ const LocationStaff = () => {
                           <div className={styles.content}>{selectedItem.info3}</div>
                           <div className={styles.content}>{selectedItem.info4}</div>
                       </div>
-                        <div>
+                        <div className={styles.Page}>
                           <div className={styles.content}>{selectedItem.info5}</div>
                           <div className={styles.Skill}>Skill</div>
                           <div className={styles.content}>{selectedItem.info6}</div>
