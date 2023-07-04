@@ -7,7 +7,7 @@
 }
 
 .Owner{
-    width: 50rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,11 +15,11 @@
     color: white;
     position: relative;
     top: -152rem;
-    left: 60rem;
+    left: 72rem;
 }
 
 .Owner img{
-    width: 25%;
+    width: 50%;
     border-radius: 50%;
     border-style: dashed;
     border-width: .5rem;
@@ -39,6 +39,5 @@
     color: black;
     font-size: .3rem;
 }
-
 
 

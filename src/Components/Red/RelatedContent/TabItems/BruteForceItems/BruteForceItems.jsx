@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { SubRedItem } from '../../../../../Share/NavOptions';
 import styles from './BruteForceItems.module.css';
 import { Grow } from '@mui/material';
@@ -6,6 +6,7 @@ import { Grow } from '@mui/material';
 const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
   const [redItems, setRedItems] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
+  const popupRef = useRef(null);
 
   useEffect(() => {
     if (ModuleCategory === 'Brute-Force') {
@@ -16,13 +17,24 @@ const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
     }
   }, [ModuleCategory]);
 
-  const openPopUp = item => {
+  const openPopUp = (item, event) => {
+    event.stopPropagation();
     setSelectedItem(item);
+    document.documentElement.style.overflow = 'hidden'; // Disable scrolling
   };
 
   const closePopup = () => {
     setSelectedItem(null);
+    document.documentElement.style.overflow = ''; // Enable scrolling
   };
+
+  useEffect(() => {
+    if (selectedItem) {
+      if (popupRef.current) {
+        popupRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [selectedItem]);
 
   return (
     <div>
@@ -32,10 +44,10 @@ const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
             <img
               src={options.img}
               className={styles.ItemsImage}
-              onClick={() => openPopUp(options)}
+              onClick={(event) => openPopUp(options, event)}
               alt=''
             />
-            <span key={index} className={styles.ItemsName} id="openPopUp" onClick={() => openPopUp(options)}>
+            <span key={index} className={styles.ItemsName} id="openPopUp" onClick={(event) => openPopUp(options, event)}>
               {options.name}
             </span>
           </div>
@@ -43,8 +55,8 @@ const BruteForceItems = ({ ModuleCategory, setModuleCategory }) => {
       </div>
       <div>
         {selectedItem && (
-          <div id="popup1" className={styles.overlay}>
-            <Grow in={true}>
+          <div className={styles.overlay}>
+            <Grow in={true} id="popup1" ref={popupRef}>
                 <div className={styles.popup}>
                   <img src={selectedItem.img} alt="" />
                   <h1>{selectedItem.name}</h1>

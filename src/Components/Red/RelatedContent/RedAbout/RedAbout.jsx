@@ -1,18 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './RedAbout.module.css';
 import { Grow } from '@mui/material';
 import { RedBook } from '../../../../Share/NavOptions';
 
 const RedAbout = () => {
   const [selectedItem, setSelectedItem] = useState(null);
-
-  const openPopUp = () => {
-    setSelectedItem(0); // Set selectedItem to 0 to display page 1
+  const popupRef = useRef(null);
+  const [popupDisplayed, setPopupDisplayed] = useState(false);
+  const openPopUp = (event) => {
+    event.stopPropagation();
+    setSelectedItem(0);
+    document.documentElement.style.overflow = 'hidden'; // Disable scrolling
+    setPopupDisplayed(true);
   };
 
   const closePopup = () => {
     setSelectedItem(null);
+    document.documentElement.style.overflow = ''; // Enable scrolling
+    setPopupDisplayed(false);
   };
+
+  useEffect(() => {
+    if (selectedItem!=null) {
+      if (popupRef.current) {
+        popupRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }
+    }
+  }, [popupDisplayed,selectedItem]);
 
   const navigateForward = () => {
     if (selectedItem === null || selectedItem === RedBook.length - 1) {
@@ -32,12 +49,12 @@ const RedAbout = () => {
 
   return (
     <div>
-      <div className={styles.SideImage} onClick={openPopUp}></div>
+      <div className={styles.SideImage} onClick={(event) => openPopUp(event)}></div>
       {RedBook?.map((options, index) => (
         <div key={options.page}>
           {selectedItem === index && (
             <div className={styles.overlay}>
-              <Grow in={true}>
+              <Grow in={true} ref={popupRef} id='popup1'>
                 <div className={styles.popup}>
                   <span className={styles.close} onClick={closePopup}>
                     &times;
@@ -90,7 +107,6 @@ const RedAbout = () => {
                       </div>
                     </div>
                   </div>
-
                   <span className={styles.NavigateBack} onClick={navigateBackward}>
                   &lt;
                   </span>

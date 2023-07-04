@@ -1,7 +1,6 @@
 .BlueIntroduction{
     display: flex;
-    background-color: rgb(60, 193, 216);
-    font-family: Anton;
+    background: linear-gradient(90deg, rgba(60,193,216,1) 31%, rgba(46,148,166,1) 31%, rgba(46,148,166,1) 68%, rgba(60,193,216,1) 68%);    font-family: Anton;
     justify-content: space-between;
     padding: 2rem;
     border-radius: 2rem;
@@ -33,7 +32,7 @@
 
 .BlueIntroduction img{
     border-radius: 2rem;
-    width: 30rem;
+    width: 40%;
 }
 
 .BlueIntroduction:hover {

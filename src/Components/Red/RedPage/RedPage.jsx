@@ -20,7 +20,7 @@ const RedPage = () => {
   }, [setCurrentPage]);
 
   return (
-    <div className={styles.RedBackground} style={{ backgroundImage: `url(${selectedBackground})`, width: "1518px" }}>
+    <div className={styles.RedBackground} style={{ backgroundImage: `url(${selectedBackground})`, width: "1526px", margin:"0 auto"}}>
       <NavBar />
       <RedTitle />
       <div className={styles.RedBody}>

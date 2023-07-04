@@ -5,7 +5,7 @@ import styles from './Random.module.css';
 
 const Random = () => {
   return (
-    <div className={styles.Background} style={{ width:"1518px", display:"grid"}}>
+    <div className={styles.Background} style={{ width: "1526px", display:"grid", margin:"0 auto"}}>
     <NavBar/>
     <div className={styles.RandomLoading}>
       <h1>This page doesn't exist</h1>

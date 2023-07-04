@@ -1,18 +1,32 @@
-import React, {useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import { File } from '../../../../Share/NavOptions';
 import styles from './LocationStaff.module.css'
 import { Grow } from '@mui/material';
 
 const LocationStaff = () => {
-    const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
+  const popupRef = useRef(null);
 
-    const openPopUp = (item) => {
-      setSelectedItem(item);
+  const openPopUp = (item, event) => {
+    event.stopPropagation();
+    setSelectedItem(item);
+    document.documentElement.style.overflow = 'hidden'; // Disable scrolling
+  };
+
+  const closePopup = () => {
+    setSelectedItem(null);
+    document.documentElement.style.overflow = ''; // Enable scrolling
+  };
+
+  useEffect(() => {
+    if (selectedItem) {
+      if (popupRef.current) {
+        popupRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     }
-  
-    const closePopup = () => {
-      setSelectedItem(null);
-    };
+  }, [selectedItem]);
+
+
   return (
     <div>
               <div className={styles.FullStaff}>
@@ -29,7 +43,8 @@ const LocationStaff = () => {
         </div>
         <div className={styles.FileHolder}>
           {File?.map((options, index) => (
-                <div className={styles.File} key={index} onClick={() => openPopUp(options)}>
+                <div className={styles.File} key={index} onClick={(event) => openPopUp(options, event)}
+                >
                   <p>
                     {options.name}
                   </p>
@@ -38,11 +53,11 @@ const LocationStaff = () => {
               ))}
         </div>
         {selectedItem && (
-              <div id="popup1" className={styles.overlay}>
-                <Grow in={true}>
+              <div className={styles.overlay}>
+                <Grow in={true} id="popup1" ref={popupRef} >
                     <div className={styles.popup}>
                       <div>
-                        <img src={selectedItem.porfolio} alt="" />
+                        <img src={selectedItem.porfolio} alt=""/>
                         <h1>{selectedItem.name}</h1>
                         <h2>{selectedItem.role}</h2>
                         <span className={styles.close} href='' onClick={closePopup}>

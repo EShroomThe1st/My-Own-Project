@@ -12,6 +12,7 @@
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .RedMessages{
@@ -20,7 +21,7 @@
     color: rgb(252, 83, 83);
     text-align: center;
     position: absolute;
-    top: 300rem;
+    top: 260rem;
     align-self: center;
   }
 
